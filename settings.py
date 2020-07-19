@@ -26,4 +26,3 @@ LEFT_OF_BOARD = 50
 
 # 每秒帧数
 FPS = 40
-

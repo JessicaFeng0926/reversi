@@ -1,4 +1,4 @@
-from __future__ import annotations
+#from __future__ import annotations
 from enum import Enum
 import settings
 
@@ -12,7 +12,7 @@ class Piece(Enum):
     E = 'E'
 
     @property
-    def opposite(self) -> Piece:
+    def opposite(self) -> 'Piece':
         '''翻转棋子'''
         if self == Piece.B:
             return Piece.W
