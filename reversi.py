@@ -73,7 +73,7 @@ def welcome() -> Tuple[pygame.Rect,pygame.Rect,pygame.Rect]:
     return easy_rect,medium_rect,hard_rect
     
 
-def get_difficulty(easy_rect,meduim_rect,hard_rect) -> Callable:
+def get_difficulty(easy_rect,medium_rect,hard_rect) -> Callable:
     '''根据用户的选择获取电脑要使用的算法'''
     while True:
         for event in pygame.event.get():
@@ -83,7 +83,7 @@ def get_difficulty(easy_rect,meduim_rect,hard_rect) -> Callable:
                 if event.key == pl.K_ESCAPE:
                     terminate()
             if event.type == pl.MOUSEBUTTONUP:
-                x,y = event.pos[0], event.pos[1]
+                x,y = event.pos
                 if easy_rect.collidepoint(x,y):
                     return get_worst_move
                 if medium_rect.collidepoint(x,y):

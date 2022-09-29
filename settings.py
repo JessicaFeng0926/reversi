@@ -1,5 +1,4 @@
 import os
-import pygame
 
 # 文件夹路径
 BASE_DIR = os.path.abspath(os.path.dirname(__file__))

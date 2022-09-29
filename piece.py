@@ -1,6 +1,6 @@
 #from __future__ import annotations
 from enum import Enum
-import settings
+
 
 class Piece(Enum):
     '''棋子类'''

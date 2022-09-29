@@ -39,9 +39,9 @@ def get_worst_move(board: Board) -> Cell:
         if score < worst_score:
             worst_score = score
             worst_cell = cell
-    # 如果可以走的格子只有角落里的,那就选一个角落里分数最低的返回
+    
     if worst_cell:
         return worst_cell
-    
+    # 如果可以走的格子只有角落里的,那就选一个角落里分数最低的返回
     worst_move =  min(valid_moves,key=lambda m:m[1])
     return worst_move[0]
